@@ -18,8 +18,8 @@ public class Account {
 	}
 
 	public void withdraw(int amount) {
-		Transaction deposit = new Transaction(clock.dateAsString(), -amount);
-		transactions.add(deposit);
+		Transaction withdraw = new Transaction(clock.dateAsString(), -amount);
+		transactions.add(withdraw);
 	}
 
 	public void printStatement() {
